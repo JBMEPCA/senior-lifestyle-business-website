@@ -1,0 +1,120 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Base"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1C1720",
+					"name": "Ink"
+				},
+				{
+					"slug": "brand",
+					"color": "#4E2A51",
+					"name": "Aubergine"
+				},
+				{
+					"slug": "brand-bright",
+					"color": "#B48CB2",
+					"name": "Heather"
+				},
+				{
+					"slug": "surface",
+					"color": "#F7F4F1",
+					"name": "Linen"
+				},
+				{
+					"slug": "line",
+					"color": "#E6DFE3",
+					"name": "Line"
+				},
+				{
+					"slug": "muted",
+					"color": "#655A66",
+					"name": "Muted"
+				},
+				{
+					"slug": "muted-light",
+					"color": "#A89CA8",
+					"name": "Muted Light"
+				},
+				{
+					"slug": "cyan",
+					"color": "#2F6F78",
+					"name": "Estate Teal"
+				},
+				{
+					"slug": "violet",
+					"color": "#6B4E8C",
+					"name": "Violet"
+				},
+				{
+					"slug": "green",
+					"color": "#3F6B4F",
+					"name": "Garden Green"
+				},
+				{
+					"slug": "amber",
+					"color": "#A67C3D",
+					"name": "Bronze"
+				},
+				{
+					"slug": "red",
+					"color": "#A8302B",
+					"name": "News Red"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "heading",
+					"name": "Playfair Display",
+					"fontFamily": "\"Playfair Display\", Georgia, \"Times New Roman\", serif",
+					"fontFace": [
+						{
+							"fontFamily": "Playfair Display",
+							"fontStyle": "normal",
+							"fontWeight": "400 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/playfair-display-variable.ttf"
+							]
+						}
+					]
+				},
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif"
+				},
+				{
+					"slug": "brand",
+					"name": "Brand Lockup",
+					"fontFamily": "\"Playfair Display\", Georgia, \"Times New Roman\", serif"
+				},
+				{
+					"slug": "mono",
+					"name": "JetBrains Mono",
+					"fontFamily": "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+					"fontFace": [
+						{
+							"fontFamily": "JetBrains Mono",
+							"fontStyle": "normal",
+							"fontWeight": "100 800",
+							"src": [
+								"file:./assets/fonts/jetbrains-mono-variable.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}

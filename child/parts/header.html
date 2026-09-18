@@ -1,0 +1,38 @@
+<!-- wp:group {"tagName":"header","className":"site-header","backgroundColor":"contrast","textColor":"base","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+<header class="wp-block-group site-header has-base-color has-contrast-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">
+	<!-- wp:group {"align":"wide","className":"site-header__bar","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide site-header__bar">
+		<!-- wp:group {"className":"site-brand","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+		<div class="wp-block-group site-brand">
+			<!-- wp:html -->
+			<a class="logo-lockup" href="/" aria-label="Senior Lifestyle Business home">
+				<span class="logo-row">Senior Lifestyle&nbsp;<span class="logo-mark">BUSINESS</span></span>
+				<span class="logo-mag">RETIREMENT COMMUNITIES</span>
+			</a>
+			<!-- /wp:html -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:group {"className":"site-header__right","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+		<div class="wp-block-group site-header__right">
+			<!-- wp:navigation {"className":"site-nav","overlayMenu":"mobile","overlayBackgroundColor":"contrast","overlayTextColor":"base","layout":{"type":"flex","justifyContent":"right"}} -->
+				<!-- wp:navigation-link {"label":"News","url":"/category/news/","kind":"custom","isTopLevelLink":true} /-->
+				<!-- wp:navigation-link {"label":"Development","url":"/category/development-planning/","kind":"custom","isTopLevelLink":true} /-->
+				<!-- wp:navigation-link {"label":"Capital","url":"/category/capital-investment/","kind":"custom","isTopLevelLink":true} /-->
+				<!-- wp:navigation-link {"label":"Operators","url":"/category/operators-economics/","kind":"custom","isTopLevelLink":true} /-->
+
+				<!-- wp:navigation-submenu {"label":"More","url":"#","kind":"custom","isTopLevelItem":true} -->
+					<!-- wp:navigation-link {"label":"Fees &amp; Regulation","url":"/category/fees-regulation/","kind":"custom"} /-->
+					<!-- wp:navigation-link {"label":"Sales &amp; Marketing","url":"/category/sales-marketing/","kind":"custom"} /-->
+					<!-- wp:navigation-link {"label":"Design &amp; Amenities","url":"/category/design-amenities/","kind":"custom"} /-->
+				<!-- /wp:navigation-submenu -->
+
+				<!-- wp:navigation-link {"label":"Submit","url":"/submit-news/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- /wp:navigation -->
+			<!-- wp:search {"showLabel":false,"placeholder":"Search articles","buttonPosition":"button-only","buttonUseIcon":true,"className":"header-search"} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+</header>
+<!-- /wp:group -->

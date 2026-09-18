@@ -1,0 +1,79 @@
+/*
+Theme Name: Senior Lifestyle Business
+Theme URI: https://seniorlifestylebusiness.com
+Template: cogent-base
+Author: Cogent Multimedia
+Description: The business of retirement communities, for the people who develop, fund and run them. A child of Cogent Base: this theme carries the palette, the display face, the masthead and the section patterns, and inherits everything else.
+Version: 1.0.0
+Requires at least: 6.5
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: senior-lifestyle-business
+*/
+
+/* ------------------------------------------------------------------
+   Almost everything lives in cogent-base. theme.json carries the
+   palette and the display face, and the parent's CSS is written
+   against preset variables, so changing a colour there changes it
+   everywhere without a line of CSS here.
+
+   Only put a rule in this file when it is genuinely true of THIS
+   title and no other. If you find yourself adding layout, it belongs
+   in the parent.
+
+   The look: premium property and investment, not care-home soft.
+   Aubergine and heather on a near-black plum ink, bronze as the
+   accent, linen surfaces, and Playfair Display as the display face:
+   a high-contrast serif, the register of a property prospectus. No
+   other title in the group uses a serif display face or this
+   palette (September 2026: blue, green, oxblood, navy and sky).
+------------------------------------------------------------------- */
+
+/* ---------- Masthead chip ----------
+
+   The parent defaults the chip to the brand colour. Aubergine is deep
+   by design and measures 1.5:1 against the ink header, so it would
+   vanish, a trap two earlier titles' deep brand colours both hit.
+   The chip is heather with ink text instead: 6.2:1. */
+
+.logo-mark {
+	background: var(--wp--preset--color--brand-bright);
+	color: var(--wp--preset--color--contrast);
+	box-shadow: 0 0 14px color-mix(in srgb, var(--wp--preset--color--brand-bright) 40%, transparent);
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: 0.72em;
+	letter-spacing: 0.14em;
+}
+
+/* The serif lockup reads best a touch larger and lighter than the
+   parent's sans default, and the strapline line in a pale bronze
+   rather than the parent's brand-bright, so the chip stays
+   the only heather mark in the masthead. */
+.logo-row {
+	font-size: 1.45rem;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+
+.logo-mag {
+	color: color-mix(in srgb, var(--wp--preset--color--amber) 60%, white);
+}
+
+/* ---------- Emoji stay text-sized ----------
+
+   Core's inline emoji sizing does not survive the parent; without this
+   a single emoji in a post title renders hundreds of pixels tall (seen
+   on a sibling title's homepage hero, 7 Sep 2026). If a second title needs it, move it to
+   the parent through THE RULE. */
+img.emoji,
+img.wp-smiley {
+	display: inline-block;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em;
+	vertical-align: -0.1em;
+	border: none;
+	box-shadow: none;
+}
