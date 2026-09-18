@@ -75,12 +75,15 @@ add_filter( 'cogent_brand', function ( $brand ) {
 	return $brand;
 } );
 
-/*
- * No cogent_ga4_id filter yet. The GA4 property is a JB step on the launch
- * tracker; when it exists, verify the property by NAME through the Admin API
- * (never trust the ID in the console URL) and add the filter here, or let Site
- * Kit tag and leave this as the fallback.
+/**
+ * GA4 measurement ID for this title's property (554927765), in the Cogent
+ * Titles account owned by cimeshot@gmail.com, created 18 Sep 2026. Site Kit is
+ * installed but not connected, so this is the only tag on the page; the parent
+ * stands aside automatically if Site Kit ever starts tagging.
  */
+add_filter( 'cogent_ga4_id', function () {
+	return 'G-GKRXS03M0Q';
+} );
 
 /**
  * The byline for this title.
