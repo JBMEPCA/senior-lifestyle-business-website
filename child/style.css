@@ -4,7 +4,7 @@ Theme URI: https://seniorlifestylebusiness.com
 Template: cogent-base
 Author: Cogent Multimedia
 Description: The business of retirement communities, for the people who develop, fund and run them. A child of Cogent Base: this theme carries the palette, the display face, the masthead and the section patterns, and inherits everything else.
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -78,3 +78,16 @@ img.wp-smiley {
 	border: none;
 	box-shadow: none;
 }
+
+/* ---------- Masthead artwork ----------
+
+   Heights for the drawn masthead in parts/header.html and parts/footer.html.
+   Built by cogent-base-theme/scripts/brand and installed by its install.mjs. */
+
+.site-header { --logo-art-height: 50px; }
+.site-footer { --logo-art-height: 64px; }
+@media (max-width: 600px) {
+	.site-header { --logo-art-height: 42px; }
+}
+
+/* ---------- /Masthead artwork ---------- */
