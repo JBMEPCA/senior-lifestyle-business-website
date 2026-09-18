@@ -42,7 +42,7 @@ Care Home Magazine. Never target "care home" or "nursing home" terms.
 
 Premium property and investment, not care-home soft: aubergine and heather on a
 plum-black ink, bronze accent, linen surfaces, Playfair Display as the display
-face (the only serif display face among the titles). The heather masthead chip exists because
+face (the only high-contrast serif among the titles). The heather masthead chip exists because
 aubergine vanishes on the ink header. Photography is architecture and
 landscape, never stock older couples. A drawn masthead (the
 `cogent-base-theme/scripts/brand` kit) is still to do once the name is settled;
