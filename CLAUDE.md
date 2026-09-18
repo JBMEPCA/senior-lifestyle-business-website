@@ -63,3 +63,16 @@ checklist. The vertical case is
 SiteGround, same as the other titles. Purge the cache after deploying before
 deciding a change had no effect, and check the WAF user-agent trap from earlier
 launches once the site exists.
+
+## Logo (final, 18 Sep 2026)
+
+JB chose this title's logo on 18 Sep 2026 and it is live on the site, in the
+tab icon, the WordPress site icon and the Yoast publisher logo: S4: SL monogram tile in Burgundy (#7A1F3D) beside Senior Lifestyle / Business in Playfair Display; one-line alternate; tab icon the SL tile. If the name changes, edit SENIOR_NAME in specs.mjs and rebuild.
+The site palette was changed to match the same day, so any colour note above
+that names the launch scaffold's colour is out of date.
+
+The artwork is generated, never hand-edited: the spec is in
+`cogent-base-theme/scripts/brand/specs.mjs`, files are built into its `dist/`
+and copied into `child/assets/brand/` by `install.mjs`. Change the spec,
+rebuild, reinstall, deploy. Do not redraw, recolour or replace the logo
+without JB asking.
