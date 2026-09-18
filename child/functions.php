@@ -37,14 +37,14 @@ defined( 'ABSPATH' ) || exit;
 add_filter( 'cogent_brand', function ( $brand ) {
 	// The one place this file names the title. Change it here if the name
 	// changes, and the Mailchimp audience must be renamed to match exactly.
-	$name = 'Senior Lifestyle Business';
+	$name = 'Senior Living Business';
 
 	$brand['name']  = $name;
 	$brand['short'] = $name;
 
 	// Masthead words, matching parts/header.html. The mobile menu builds its
 	// lockup from these; the default third line would read MAGAZINE.
-	$brand['lockup_lead'] = 'Senior Lifestyle';
+	$brand['lockup_lead'] = 'Senior Living';
 	$brand['lockup_mark'] = 'Business';
 	$brand['lockup_sub']  = 'RETIREMENT COMMUNITIES';
 

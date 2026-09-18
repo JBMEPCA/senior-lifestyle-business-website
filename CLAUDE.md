@@ -1,4 +1,4 @@
-# Senior Lifestyle Business: Website
+# Senior Living Business: Website
 
 WordPress site for the retirement communities title, one of the five-title wave
 of 18 September 2026. Domain `seniorlifestylebusiness.com` (.com only, bought at
@@ -8,13 +8,13 @@ Session prefix: `🏡 SENIOR`
 
 ## Naming
 
-**The name may still change.** "Senior Lifestyle" is also the trading name of a
-large US senior living operator (Senior Lifestyle Corporation, Chicago), and
-the question is with JB. The name is deliberately kept in four places in this
-theme: `$name` in the `cogent_brand` filter (functions.php), `Theme Name` in
-style.css, and the masthead lockup in `parts/header.html` (visible words and
-aria-label). The footer prints the WordPress site title. Folder, slug and file
-names stay as they are whatever the name becomes.
+**The name is Senior Living Business** (JB, 18 Sep 2026). It launched as
+Senior Lifestyle Business; JB renamed it the same day. The domain is still
+`seniorlifestylebusiness.com` and the slug, folder and file names keep the old
+wording on purpose. The name lives in `$name` and `lockup_lead` in
+functions.php, `Theme Name` in style.css, `SENIOR_NAME` in the brand kit's
+specs.mjs, the WordPress site title and the Yoast site and organisation name.
+The Mailchimp audience must be renamed to match exactly.
 
 ## Layout
 
@@ -67,7 +67,7 @@ launches once the site exists.
 ## Logo (final, 18 Sep 2026)
 
 JB chose this title's logo on 18 Sep 2026 and it is live on the site, in the
-tab icon, the WordPress site icon and the Yoast publisher logo: S4: SL monogram tile in Burgundy (#7A1F3D) beside Senior Lifestyle / Business in Playfair Display; one-line alternate; tab icon the SL tile. If the name changes, edit SENIOR_NAME in specs.mjs and rebuild.
+tab icon, the WordPress site icon and the Yoast publisher logo: S4: SL monogram tile in Burgundy (#7A1F3D) beside Senior Living / Business in Playfair Display; one-line alternate; tab icon the SL tile. If the name changes, edit SENIOR_NAME in specs.mjs and rebuild.
 The site palette was changed to match the same day, so any colour note above
 that names the launch scaffold's colour is out of date.
 
