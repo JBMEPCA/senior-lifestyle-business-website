@@ -131,7 +131,7 @@ add_filter( 'cogent_home_sections', function () {
 add_filter(
 	'cogent_brand',
 	function ( $brand ) {
-		$brand['masthead_art'] = get_stylesheet_directory_uri() . '/assets/brand/wordmark-reversed.svg';
+		$brand['masthead_art'] = get_stylesheet_directory_uri() . '/assets/brand/wordmark-reversed.svg?v=03788041';
 		return $brand;
 	},
 	20
