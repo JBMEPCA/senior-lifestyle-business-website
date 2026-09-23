@@ -1,4 +1,4 @@
-# Senior Living Business: Website
+# Senior Lifestyle Business: Website
 
 WordPress site for the retirement communities title, one of the five-title wave
 of 18 September 2026. Domain `seniorlifestylebusiness.com` (.com only, bought at
@@ -8,13 +8,23 @@ Session prefix: `🏡 SENIOR`
 
 ## Naming
 
-**The name is Senior Living Business** (JB, 18 Sep 2026). It launched as
-Senior Lifestyle Business; JB renamed it the same day. The domain is still
-`seniorlifestylebusiness.com` and the slug, folder and file names keep the old
-wording on purpose. The name lives in `$name` and `lockup_lead` in
-functions.php, `Theme Name` in style.css, `SENIOR_NAME` in the brand kit's
-specs.mjs, the WordPress site title and the Yoast site and organisation name.
-The Mailchimp audience must be renamed to match exactly.
+**The name is Senior Lifestyle Business** (JB, 23 Sep 2026, final). It launched
+under this name on 18 Sep, was renamed to Senior Living Business the same day,
+and JB reverted it on 23 Sep so the masthead matches the domain, slug, folder
+and jb@ address. Everything now reads Senior Lifestyle Business and nothing
+should read Senior Living.
+
+The name lives in `$name` and `lockup_lead` in functions.php, `Theme Name` in
+style.css, `SENIOR_NAME` in the brand kit's specs.mjs, `name` in that kit's
+install.mjs and linkedin-wave5-logos.mjs, the WordPress site title, the Yoast
+site and organisation name, `Site.name` in the fleet app database, and
+set-gmail-signatures.mjs. The Mailchimp audience must be renamed to match
+exactly: the audience name is derived from `$name`, so a mismatch does not
+error, it quietly queues signups in the local Subscribers store.
+
+Why the name was questioned at all: Senior Living News is a live US trade title
+serving these exact readers, and it was rejected as a name on 18 Sep for that
+reason. Senior Living Business sat one word away from it.
 
 ## Layout
 
@@ -64,10 +74,10 @@ SiteGround, same as the other titles. Purge the cache after deploying before
 deciding a change had no effect, and check the WAF user-agent trap from earlier
 launches once the site exists.
 
-## Logo (final, 18 Sep 2026)
+## Logo (final, 18 Sep 2026; rebuilt with the Senior Lifestyle wording 23 Sep 2026)
 
 JB chose this title's logo on 18 Sep 2026 and it is live on the site, in the
-tab icon, the WordPress site icon and the Yoast publisher logo: S4: SL monogram tile in Burgundy (#7A1F3D) beside Senior Living / Business in Playfair Display; one-line alternate; tab icon the SL tile. If the name changes, edit SENIOR_NAME in specs.mjs and rebuild.
+tab icon, the WordPress site icon and the Yoast publisher logo: S4: SL monogram tile in Burgundy (#7A1F3D) beside Senior Lifestyle / Business in Playfair Display; one-line alternate; tab icon the SL tile. If the name changes, edit SENIOR_NAME in specs.mjs and rebuild.
 The site palette was changed to match the same day, so any colour note above
 that names the launch scaffold's colour is out of date.
 
