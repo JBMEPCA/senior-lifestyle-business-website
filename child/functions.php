@@ -52,17 +52,32 @@ add_filter( 'cogent_brand', function ( $brand ) {
 
 	$brand['newsletter_promise'] = 'Development, capital and operator intelligence for the people who build and run retirement communities.';
 	$brand['newsletter_band']    = sprintf( 'The best of %s in your inbox: the scheme pipeline, the capital behind it, planning and fee regulation, and what operators in the UK, Australia and New Zealand are doing next. Free, weekly, no fluff.', $name );
+
+	// The homepage signup bar, between the ticker and the hero. Two short
+	// strings rather than newsletter_band above: that one is a paragraph and
+	// this bar is one line. The frequency stands in for a subscriber count,
+	// so it has to match when this title actually sends.
+	$brand['signup_band_title']   = 'Retirement living news, straight to your inbox';
+	$brand['signup_band_promise'] = 'Development, capital and operator intelligence. Free, every Thursday.';
 	$brand['article_signup']     = 'One email a week: the pipeline, capital and regulation intelligence retirement community operators and investors actually use.';
 
 	$brand['contact_email'] = 'jb@seniorlifestylebusiness.com';
 
 	/*
-	 * Must match the Mailchimp audience name EXACTLY. Until an audience with
-	 * this name exists in the account, signups queue in the local Subscribers
-	 * store and the mismatch shows on this title's Settings page in wp-admin.
-	 * Creating it is a JB step on the launch tracker.
+	 * Must match the Mailchimp audience name EXACTLY, and it is the one place
+	 * on this title where the audience is NOT called what the site is called.
+	 * The site is Senior Lifestyle Business; the audience was created as
+	 * "Senior Living Business" and has readers in it, so the theme bends to the
+	 * audience rather than the audience being renamed under a live list.
+	 *
+	 * This is not cosmetic. The resolver matches on name, ignoring case and
+	 * spaces, and falls back to the only audience in the account only when
+	 * there is exactly one. There are eighteen. So a near-miss here does not
+	 * pick the wrong list, it picks none: every signup returns no_list, files
+	 * as pending, and the hourly resync retries and fails forever while the
+	 * site keeps telling readers they are subscribed.
 	 */
-	$brand['mailchimp_audience'] = $name;
+	$brand['mailchimp_audience'] = 'Senior Living Business';
 
 	/*
 	 * linkedin_url is deliberately NOT set. No company page exists yet, and the
@@ -148,4 +163,27 @@ add_filter(
 		$file = get_stylesheet_directory() . '/assets/brand/favicon.svg';
 		return is_readable( $file ) ? (string) file_get_contents( $file ) : $fallback;
 	}
+);
+
+/* newsletter-popup */
+/**
+ * The newsletter popup, switched on 23 September 2026.
+ *
+ * cogent-base ships it disabled so that deploying the parent for an unrelated
+ * reason can never turn a fleet-wide interstitial on by surprise. Enabling it
+ * is therefore a per-title decision, and this is where that decision lives.
+ *
+ * Thresholds are whatever cogent_popup_config() currently defaults to; they are
+ * not restated here, because a comment that quotes the parent's numbers goes
+ * stale the first time they are tuned and this one already did. Override a key
+ * in this filter if THIS title wants something different from the fleet.
+ */
+add_filter(
+	'cogent_popup',
+	function ( $config ) {
+		$config['enabled'] = true;
+
+		return $config;
+	},
+	20
 );
